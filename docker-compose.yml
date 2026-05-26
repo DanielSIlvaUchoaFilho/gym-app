@@ -14,7 +14,7 @@ services:
     networks:
       - gym-app-postgres-and-pgadmin
     volumes:
-      - gym-app:/var/lib/postgresql/data
+      - gym-app:/var/lib/postgresql
   pgadmin:
     image: dpage/pgadmin4:9.15
     container_name: gym-app-pgadmin4
